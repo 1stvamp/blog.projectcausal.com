@@ -11,10 +11,5 @@
 		<p><?php Options::out('about'); ?></p>
 		</div>
 
-		<div class="sb-user">
-		<h2><?php _e('User'); ?></h2>
-<?php $theme->display ( 'loginform' ); ?>
-		</div>
-
 <?php Plugins::act( 'theme_sidebar_bottom' ); ?>
 <!-- /sidebar -->
