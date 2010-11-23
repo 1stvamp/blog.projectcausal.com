@@ -32,6 +32,7 @@ class JWYSIWYG extends Plugin {
 		if ( $theme->page == 'publish' ) {
 			echo <<<JWYSIWYG
 			<script type="text/javascript">
+			//<![CDATA[
 			$('label[for=content]').text('');
 			$(function()
 			{
@@ -94,7 +95,8 @@ class JWYSIWYG extends Plugin {
 					var instance = $.data($('#content')[0], 'wysiwyg');
 					instance.setContent(instance.getContent() + value);
 				}
-			}
+			};
+			//]]>
 			</script>
 JWYSIWYG;
 		}
