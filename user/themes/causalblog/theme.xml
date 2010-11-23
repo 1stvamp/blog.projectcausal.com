@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+	<name>Project Causal Blog Theme</name>
+	<author>Team Causal</author>
+	<url>https://github.com/causality/blog/</url>
+	<version>1.0</version>
+	<template_engine>rawphpengine</template_engine>
+	<description>Customised version of the Habari K2 blog theme for Project Causal</description>
+	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
+</theme>
