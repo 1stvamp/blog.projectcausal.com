@@ -34,6 +34,8 @@ foreach ( $pages as $tab ) {
 <?php
 }
 ?>
+		<li><a href="http://www.projectcausal.com/">Project Causal</a></li>
+		<li><a href="https://www.gargoyle.me/">gargoyle.me</a></li>
 	</ul>
 
 	</div>
