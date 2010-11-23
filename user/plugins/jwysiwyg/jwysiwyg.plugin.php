@@ -87,7 +87,6 @@ class JWYSIWYG extends Plugin {
 					copy  : { visible : true },
 					paste : { visible : true },
 					html  : { visible: true },
-					});
 			});
 			habari.editor = {
 				insertSelection: function(value) {
