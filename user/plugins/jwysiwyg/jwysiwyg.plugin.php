@@ -33,9 +33,9 @@ class JWYSIWYG extends Plugin {
 			echo <<<JWYSIWYG
 			<script type="text/javascript">
 			//<![CDATA[
-			$('label[for=content]').text('');
 			$(function()
 			{
+				$('label[for=content]').text('');
 				$('#content').wysiwyg({
 					controls: {
 					strikeThrough : { visible : true },
@@ -88,14 +88,15 @@ class JWYSIWYG extends Plugin {
 					copy  : { visible : true },
 					paste : { visible : true },
 					html  : { visible: true }
-				}
+					}
+				});
+				habari.editor = {
+					insertSelection: function(value) {
+						var instance = $.data($('#content')[0], 'wysiwyg');
+						instance.setContent(instance.getContent() + value);
+					}
+				};
 			});
-			habari.editor = {
-				insertSelection: function(value) {
-					var instance = $.data($('#content')[0], 'wysiwyg');
-					instance.setContent(instance.getContent() + value);
-				}
-			};
 			//]]>
 			</script>
 JWYSIWYG;
