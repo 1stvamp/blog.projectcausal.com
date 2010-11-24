@@ -1,4 +1,4 @@
-Customised Habari template and plugins for (http://blog.projectcausal.com/)[blog.projectcausal.com].
+Customised Habari template and plugins for (blog.projectcausal.com)[http://blog.projectcausal.com/].
 
 To install in an Habari instance:
 
